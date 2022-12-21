@@ -1,9 +1,11 @@
 :root{
     --bs-success-rgb:16, 216, 118;
     --bs-primary-rgb: 30, 116, 253;
+    --bs-warning-rgb: 254, 148, 49;
     --bg-gray: #EEEEEE;
     --text-gray: #adb5bd;
     --bg-active-link: #D2E3FF;
+    --text-gray-888: #888;
 }
 
 @font-face {
@@ -25,6 +27,12 @@ body {
 .bg-gray {
     background-color: var(--bg-gray);
 }
+.text-gray {
+    color: var(--text-gray);
+}
+.text-gray-888 {
+    color: var(--text-gray-888);
+}
 
 /* Animations */
 @keyframes infiniteRotate {
@@ -37,4 +45,25 @@ body {
 }
 .infinite-rotate {
     animation: 4s linear infinite infiniteRotate;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.shadow-xss {
+    box-shadow: 0 8px 30px rgba(0,0,0,.05)!important;
+}
+
+.bg-blue-gradiant {
+    background: linear-gradient(to right,#0575e6,#021b79)!important;
+}
+.bg-red-gradiant {
+    background: linear-gradient(to right,#e44d26,#f16529)!important;
+}
+.bg-gold-gradiant {
+    background: linear-gradient(to right,#f2994a,#f2c94c)!important;
+}
+.bg-mini-gradiant {
+    background: linear-gradient(to right,#ee0979,#ff6a00)!important;
 }
