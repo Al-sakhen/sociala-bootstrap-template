@@ -1,0 +1,42 @@
+.navbar .navbar-brand {
+    font-size: 34px;
+}
+
+.navbar .search input::placeholder {
+    font-size: 10px;
+    font-weight: 600;
+}
+.navbar .search input:focus-visible {
+    outline: none;
+}
+
+.navbar .nav-link i  {
+    font-size: 20px;
+}
+.navbar .first-list .nav-link,
+.navbar .third-list .nav-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-gray);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.navbar .first-list .nav-link i {
+    color: var(--text-gray);
+}
+.navbar .first-list .nav-link.active {
+    background-color: var(--bg-active-link);
+}
+.navbar .first-list .nav-link.active i {
+    color: rgb( var(--bs-primary-rgb) );
+}
+
+.navbar .second-list .nav-link{
+    margin-right: 9px;
+}
+.navbar .second-list .nav-link i{
+    color:rgb( var(--bs-primary-rgb) );
+}

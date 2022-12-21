@@ -1,0 +1,40 @@
+:root{
+    --bs-success-rgb:16, 216, 118;
+    --bs-primary-rgb: 30, 116, 253;
+    --bg-gray: #EEEEEE;
+    --text-gray: #adb5bd;
+    --bg-active-link: #D2E3FF;
+}
+
+@font-face {
+    font-family: fredokaOne;
+    src: url('../fonts/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.fredoka-font {
+    font-family: fredokaOne;
+}
+body {
+    font-family: montserrat ;
+}
+.bg-gray {
+    background-color: var(--bg-gray);
+}
+
+/* Animations */
+@keyframes infiniteRotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.infinite-rotate {
+    animation: 4s linear infinite infiniteRotate;
+}
