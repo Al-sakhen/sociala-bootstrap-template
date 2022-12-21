@@ -40,3 +40,38 @@
 .navbar .second-list .nav-link i{
     color:rgb( var(--bs-primary-rgb) );
 }
+/* offcanva style */
+.navbar .offcanva-btn{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navbar .offcanva-btn::before,
+.navbar .offcanva-btn::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    right: 0;
+    border-radius: 1px;
+    transition: .25s;
+}
+
+.navbar .offcanva-btn::before{
+    width: 40px;
+    top: 8px;
+}
+.navbar .offcanva-btn::after{
+    width: 30px;
+    top: 20px;
+}
+.navbar .offcanva-btn.active::before{
+    transform: translateY(8px) rotate(45deg);
+}
+.navbar .offcanva-btn.active::after{
+    transform: translateY(-8px) rotate(-45deg);
+    width: 40px;
+    top: 24px;
+}

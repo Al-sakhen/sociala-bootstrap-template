@@ -66,8 +66,9 @@
             <div class="second-list d-none d-lg-block ms-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active position-relative" aria-current="page" href="#">
                             <i class="fa-solid fa-bell"></i>
+                            <span class="p-1 rounded-circle bg-warning position-absolute"></span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -110,27 +111,38 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button class="offcanva-btn border-0 position-relative" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             </button>
                         </a>
                     </li>
                 </ul>
             </div>
-
-            
-
-
-
-
-
-
-        
-            
         </div>
     </nav>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- end navbar -->
 
@@ -139,6 +151,8 @@
     <script src="vendor/js/bootstrap.min.js"></script>
     <!-- jquery -->
     <script src="vendor/js/jquery-3.6.2.min.js"></script>
+    <!-- custmoized -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
