@@ -67,3 +67,38 @@ a{
 .bg-mini-gradiant {
     background: linear-gradient(to right,#ee0979,#ff6a00)!important;
 }
+/* style scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+.sidebar ,
+.chat-contacts{
+    width: 260px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-content{
+    padding-left: 260px;
+    padding-right: 260px;
+    transition: .5s;
+}
+.main-content.active-chat{
+    padding-right: 0 !important;
+}
+
+.chat-contacts{
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.chat-contacts.active{
+    right: -260px;
+}

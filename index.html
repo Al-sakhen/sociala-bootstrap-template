@@ -18,7 +18,7 @@
 <body>
 
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid justify-content-start">
             <a class="navbar-brand fredoka-font" href="#">
                 <i class="fa-solid fa-bolt text-success"></i>
@@ -73,7 +73,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="fa-regular fa-message"></i>
+                            <i class="fa-regular fa-message message-btn"></i>
                         </a>
                     </li>
 
@@ -221,8 +221,129 @@
             </div>
         </div>
     </div>
-
     <!-- end navbar -->
+
+    <!-- start sidebar -->
+    <aside class="sidebar position-fixed d-none d-lg-block">
+        <div class="p-3">
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">new feeds</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-tv bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Newsfeed</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-award bg-red-gradiant"></i>
+                            <h3 class="ms-3">Bades</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-globe bg-gold-gradiant "></i>
+                            <h3 class="ms-3">Explore Stories</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-bolt bg-mini-gradiant"></i>
+                            <h3 class="ms-3">Popular Groups</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-regular fa-user bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Author Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">more pages</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-inbox"></i>
+                            <h3 class="ms-3">Email Box</h3>
+                            <span class="bg-warning text-white ms-auto px-2 py-1 rounded">
+                                584
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <h3 class="ms-3">Near Hotel</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="ms-3">Latest Events</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h3 class="ms-3">Live Stream</h3>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">account</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3 class="ms-3">Settings</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h3 class="ms-3">Analytics</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="fa-regular fa-message"></i>
+                            <h3 class="ms-3">Chat</h3>
+                            <span class="bg-warning text-white ms-auto px-2 py-1 rounded">
+                                23
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- end sidebar -->
+
+    <!-- start main-content -->
+    <section class="main-content">
+        <div class="container-fluid container-lg">
+            <div class="bg-primary">
+                <h1>content</h1>
+            </div>
+            
+        </div>
+    </section>
+    <!-- end main-content -->
+
+    <!-- start chat-contact -->
+    <div class="chat-contacts bg-warning position-fixed d-none d-lg-block">
+        <h1>COntacts</h1>
+    </div>
+    <!-- end chat-contact -->
+
+
 
 
     <!-- bootstrap -->
