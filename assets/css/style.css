@@ -51,6 +51,11 @@ a{
     text-decoration: none;
     color: black;
 }
+.w35 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
 .shadow-xss {
     box-shadow: 0 8px 30px rgba(0,0,0,.05)!important;
 }
