@@ -6,6 +6,9 @@
     --text-gray: #adb5bd;
     --bg-active-link: #D2E3FF;
     --text-gray-888: #888;
+
+    --theme-color: #05f;
+    --theme-color-shade: #09f;
 }
 
 @font-face {
@@ -56,6 +59,9 @@ a{
     height: 35px;
     border-radius: 50%;
 }
+.w20{
+    width: 20px;
+}
 .shadow-xss {
     box-shadow: 0 8px 30px rgba(0,0,0,.05)!important;
 }
@@ -71,6 +77,9 @@ a{
 }
 .bg-mini-gradiant {
     background: linear-gradient(to right,#ee0979,#ff6a00)!important;
+}
+.bg-primary-gradiant {
+    background: linear-gradient(135deg,var(--theme-color),var(--theme-color-shade))!important;
 }
 /* style scrollbar */
 /* width */
@@ -106,4 +115,20 @@ a{
 }
 .chat-contacts.active{
     right: -260px;
+}
+
+.rounded-xxl{
+    border-radius: 15px !important;
+}
+
+.font-xs {
+    font-size: 14px;
+}
+
+.font-xss{
+    font-size: 12px;
+}
+
+.fw-600{
+    font-weight: 600;
 }
