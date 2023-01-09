@@ -44,3 +44,9 @@ $(window).on('resize', function(){
         $('.main-content').css({'padding-right': 0 , 'padding-left': 0})
     }
 })
+
+
+// stories carousel
+$(".owl-carousel").owlCarousel({
+    margin : 10
+});
