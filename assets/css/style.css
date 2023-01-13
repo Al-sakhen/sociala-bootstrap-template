@@ -138,6 +138,11 @@ a{
     font-weight: 600;
 }
 
+.center-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* stories carousel */
 .stories-carousel .owl-item{
     border-radius: 15px;
@@ -164,4 +169,19 @@ a{
 }
 .stories-carousel .owl-item:nth-child(1){
     background-color: #343A40;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    background: rgba(0,0,0,.6);
+    border-radius: 10px;
 }
