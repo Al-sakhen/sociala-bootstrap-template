@@ -234,8 +234,31 @@ a {
     border-radius: 10px;
 }
 
+.h250{
+    height: 250px;
+}
+.w90{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.pl-135{
+    padding-left: 135px;
+}
 
-
+.profile-list a.active{
+    border-bottom: 1px solid black;
+    padding-bottom: 22px;
+}
+.profile-list a {
+    margin-right: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform:capitalize ;
+}
+.profile-list a:not(.active){
+    color: var(--text-gray);
+}
 
 /* loader */
 .dots {
