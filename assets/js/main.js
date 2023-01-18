@@ -18,14 +18,11 @@ let windowWidth = $(window).width();
 let sidebarWidth = $('.sidebar').width();
 
 if( windowWidth >= 1600 ){
-    console.log('greater than 1600');
     $('.main-content').css({'padding-right': sidebarWidth+'px' , 'padding-left': sidebarWidth+'px'})
 }else if ( windowWidth >= 992 && windowWidth < 1600 ){
-    console.log('between 992 and  1600');
     $('.main-content').css({'padding-right': 0 , 'padding-left': sidebarWidth+'px'})
 
 }else if ( windowWidth < 992 ){
-    console.log('less than 992 ');
     $('.main-content').css({'padding-right': 0 , 'padding-left': 0})
 }
 
@@ -33,14 +30,11 @@ $(window).on('resize', function(){
     let windowWidth = $(window).width();
 
     if( windowWidth >= 1600 ){
-        console.log('greater than 1600');
         $('.main-content').css({'padding-right': sidebarWidth+'px' , 'padding-left': sidebarWidth+'px'})
     }else if ( windowWidth >= 992 && windowWidth < 1600 ){
-        console.log('between 992 and  1600');
         $('.main-content').css({'padding-right': 0 , 'padding-left': sidebarWidth+'px'})
     
     }else if ( windowWidth < 992 ){
-        console.log('less than 992 ');
         $('.main-content').css({'padding-right': 0 , 'padding-left': 0})
     }
 })
