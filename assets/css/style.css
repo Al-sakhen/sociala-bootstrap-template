@@ -9,6 +9,7 @@
 
     --theme-color: #05f;
     --theme-color-shade: #09f;
+    --facebook-bg : #3B5999;
 }
 
 @font-face {
@@ -24,7 +25,9 @@
 .fredoka-font {
     font-family: fredokaOne;
 }
-
+.bg-facebook {
+    background-color: var(--facebook-bg);
+}
 body {
     font-family: montserrat;
 }
